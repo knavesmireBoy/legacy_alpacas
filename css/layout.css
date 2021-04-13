@@ -1,0 +1,37 @@
+* { margin: 0; padding: 0 }
+img /* to prevent bottom gaps. BUT overide if inline treatment of images is required. https://developer.mozilla.org/en/Images,_Tables,_and_Mysterious_Gaps */  { display: block }
+.preshow      { display: block }
+.hide   { display: none }
+a, a:visited    { color: #000; background-color: transparent }
+a:hover { color: gray }
+
+#content  { width: 600px; float: right }
+#content h2        { background-color: transparent; background-image: url("../images/t/title.jpg"); background-repeat: no-repeat; background-position: right 0; display: block; margin-left: -1200px; width: 1800px; height: 70px }
+body#home li.home_t a, body#alpacas li.alpacas_t a, body#us li.about_t a, body#upkeep li.upkeep_t a, body#news li.news_t a, body#stud li.stud_t a, body#forsale li.sale_t a, body#lnks li.links_t a, body#gal li.gallery_t a, body#contact li.contact_t a    { color: #900; background-image: url("../images/the_links.gif"); background-position: 0 -120px }
+/*<agl.folder "sidebar">*/
+	#sidebar /*  lofi  */    { width: 200px; float: left }
+	#sidebar div.inner { background-image: url("../images/the_farm_02.jpg"); background-repeat: no-repeat; padding-top: 70px; padding-bottom: 167px }
+	#sidebar a:link, #sidebar a:visited { background-color: #fff; background-image: url("../images/the_links.gif"); background-repeat: no-repeat }
+	#sidebar a:hover { background-position: 0 -60px }
+	#sidebar a:active { background-position: 0 -120px }
+/*</agl.folder>*/
+/*<agl.folder "equal columns trick">*/
+	#innerwrap { overflow: hidden }
+	#content, #sidebar { margin-bottom: -500px; padding-bottom: 500px }
+/*</agl.folder>*/
+#footer  { color: white; background-color: transparent; background-image: url(../images/grass.png); margin-top: -167px; z-index: 1; width: 800px; height: 177px; float: left }
+#footer ul  { color: #fff; font-size: 105%; background-color: #008000; background-image: url(../images/grass_bg.png); background-repeat: no-repeat; background-position: 0 bottom; top: 116px }
+#copy                   { margin-top: -40px; margin-bottom: 10em; width: 100%; overflow: hidden; z-index: 2}
+/*<agl.folder "absolute images">*/
+	/* Start Mac IE5 filter \*/
+	div.im { position: absolute; right: 0; bottom: 0 }
+		/*FOR SALE: z-index:1 ;  NOT FOR SALE: z-index:3*/
+	body#forsale div.im     { z-index: 3; top: 60px ; display: block /*none*/; }/*toggle display for sale/nosale*/
+	body#forsale #footer    { z-index: 4 }
+	div.im img { display: none }
+	body#home img#carlos, body#us img#honcho, body#alpacas img#alpacas_group, body#upkeep img#upkeep2, body#stud img#Carlos_gys, body#forsale img#for_sale, body#lnks img#grazing_alpaca, body#contact img#pablo  { display: block }
+	/* End Mac IE5 filter */
+	body#alpacas div.im, body#upkeep div.im  { bottom: 70px }
+	body#stud div.im { bottom: 40px }
+/*</agl.folder>*/
+ul, #footer, #copy, div#thumbnails, #placeholder, #wrap, #header { position: relative }

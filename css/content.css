@@ -1,0 +1,69 @@
+#copy p        { line-height: 1.5; margin-bottom: 0; padding: 0.6em 1em 0 }
+#copy p span   { display: block }
+#copy h3 img   { border-bottom: 1px solid #9c0 }
+/*<agl.folder "custom">*/
+	body#us #copy p, body#alpacas #copy p { margin-right: 14em }
+	body#upkeep h3 { position: relative; left: 190px }
+	body#stud #copy { width: 17em }
+	body#home #copy { width: 70% }
+	body#us #copy p span { word-spacing: -0.15em }
+	body#lnks dt { margin-top: 1em }
+/*</agl.folder>*/
+/*<agl.folder "sales">*/
+	body#forsale #copy h3 img  { padding-bottom: 0.4em; border-bottom: 0 solid #9c0 }
+	ul.breadcrumb { padding-top: 0.7em; padding-bottom: 0; padding-left: 13px; overflow: hidden; border-style: solid solid none; border-width: 1px 1px 0; border-color: #9c0 }
+	/* Following style: left and right borders turned to white when only top rule is required for the NO SALE status. Otherwise breadcrumb is top of a border that is complted by the following "sell" div*/ 
+	ul.breadcrumb  { border-right: white; border-left: white }
+	ul.breadcrumb li { font-weight: normal; display: inline }
+	ul.breadcrumb li a       { color: #fff; font-weight: normal; background-color: #9c0; background-image: url(../images/chevvy.gif); background-repeat: no-repeat; background-position: 100% 50%; padding: 0.2em 2em 0.2em 0.5em; float: left ; outline-style: none; }
+	ul.breadcrumb li a.next       { background-color: #008000; background-image: url("../images/chevvy_white.gif") }
+	ul.breadcrumb li a.fill          { background-image: url("../images/chevvy_black.gif") }
+	ul.breadcrumb li a:hover { color: #fff; background-color: #000 }
+	div#thumbnails /*  overflow set to auto encloses the floated inner content and clears the element  */  { font-size: 90%; padding: 0.8em 6px 5px 7px; overflow: hidden; border-style: solid; border-width: 0 1px 1px; border-color: #9c0 }
+	div#thumbnails dl { margin: 0 8px 0 7px; width: 102px; float: left }
+	div#thumbnails dd { padding: 0.5em 0 0 }
+	div#thumbnails dt a { display: block; position: relative; width: 100px; height: 190px; overflow: hidden; border-style: solid; border-width: 1px; }
+	div#thumbnails dt a img { position: absolute }
+	div#thumbnails dt a span { background-image: url("../images/sold_only.png"); background-repeat: no-repeat; background-position: center; text-indent: -500px; display: block; position: absolute; width: 100%; height: 100% }
+	div#thumbnails dt a:hover { }
+	body#forsale #sell { padding: 0.8em 10px 10px; overflow: hidden; border-style: none solid solid; border-width: 0 1px 1px; border-color: #9c0  }
+	body#forsale #sell a  { position: relative; width: 328px; float: right; border: solid 1px ; }
+	body#forsale #sell a img { width: 100% }
+	body#forsale #sell table { margin-bottom: 10px; width: 240px }
+	#gracepic   { left: -250px }
+	#juanitapic { top: -20px; left: -350px }
+	#mariapic  { top: -10px; left: -250px }
+	#pilarpic { top: -44px; left: -250px }
+	.bigpic { text-align: center; margin-right: auto; margin-bottom: 1em; margin-left: auto; padding: 10px; border-style: solid; border-width: 0 1px 1px; border-color: #9c0 }
+	/* Cascading styles for four animals DEFAULT is five, set above */
+	div#thumbnails  { padding-left: 16px }
+	div#thumbnails dl { width: 131px }
+	div#thumbnails dt a { width: 129px }
+		/* Cascading styles for two animals */
+	div#thumbnails   { padding-right: 0; padding-left: 10px }
+	div#thumbnails dl   { margin-right: 10px; margin-left: 0; width: 284px }
+	div#thumbnails dt a   { width: 282px }
+		/* Cascading styles for three animals */
+		div#thumbnails dl   { width: 185px ; }
+			div#thumbnails dt a   { width: 186px }
+
+/*</agl.folder>*/
+/*<agl.folder "gallery">*/
+body#gal #footer       { background-image: none; margin-top: 0; height: auto; border-top: 0 solid #9c0 }
+body#gal #footer ul       { padding: 2em; top: 0 }
+body#gal #content h2 { background-image: url("../images/t/title_Gallery_03.jpg") }
+body#gal #sidebar div.inner { padding-bottom: 30px }
+	ul#thumbnails { margin-top: 15px; padding: 5px; float: left; border: solid 1px #9c0 }
+	#thumbnails li { margin: 5px; float: left }
+	#thumbnails li a { color: #000; display: block; width: 90px; height: 60px; border: solid 1px }
+	#thumbnails li a#wiredUp, #thumbnails li a#juanita { width: 64px; height: 96px }
+	#thumbnails li a img { width: 100%; height: 100% }
+	#thumbnails li.floatright { float: right }
+	#thumbnails li a:hover { border-color: #900 }
+	#placeholder { width: 100% }
+	#placeholder p { text-align: center; margin-bottom: 0.5em }
+	#placeholder p img { display: inline; padding: 2px; border: solid 1px }
+	#placeholder p.left { margin-bottom: 0; position: absolute; top: 48%; left: 0 }
+	#placeholder p.right { margin-bottom: 0; position: absolute; top: 48%; right: 0 }
+	#swap { display: block; margin-right: auto; margin-bottom: 2em; margin-left: auto; padding: 8px; border: solid 1px }
+/*</agl.folder>*/
